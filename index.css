@@ -1,0 +1,32 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+:root {
+    /* Fonts */
+    --main-font: Helvetica, Arial, sans-serif;
+
+    /* Colors */
+    --primary: "";
+    --secondary: "";
+}
+
+* {
+    font-family: var(--main-font);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 29.7cm;
+    width: 21cm;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5cm;
+    margin-bottom: 1.5cm;
+}
+
+@media print {
+    body {
+        margin-top: 0cm;
+        margin-bottom: 0cm;
+    }
+}

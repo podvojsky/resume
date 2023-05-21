@@ -9,21 +9,132 @@
 <body>
     <h1>Lukáš Podvojský</h1>
     <main>
-        <section>
-            <h2><i class="bi bi-person-circle"></i>Profile</h2>
-        </section>
-        <section>
-            <h2><i class="bi bi-mortarboard-fill"></i>Education</h2>
-        </section>
-        <section>
-            <h2><i class="bi bi-briefcase-fill"></i>Experience</h2>
-        </section>
-        <section>
-            <h2><i class="bi bi-envelope-fill"></i>Details</h2>
-        </section>
-        <section>
-            <h2><i class="bi bi-code-slash"></i>Skills</h2>
-        </section>
+        <div class="section-flex">
+            <section class="section-profile">
+                <h2 class="section-heading"><i class="bi bi-person-circle"></i>Profile</h2>
+                <p>
+                    I am a student who is eager to learn new skills.
+                    I consider myself a front-end developer with attention to detail.
+                    Problem-solving and diligence are just two of my good qualities.
+                    My goal is to gain as much experience as possible to help companies create amazing software products.
+                </p>
+            </section>
+            <section class="section-edu">
+                <h2 class="section-heading"><i class="bi bi-mortarboard-fill"></i>Education</h2>
+                <div id="edu-items">
+                    <div class="edu-item">
+                        <div class="edu-item-left">
+                            <div class="edu-item-name">BUT Brno</div>
+                            <div class="edu-item-timespan">2020&thinsp;&ndash;&thinsp;Present</div>
+                        </div>
+                        <div class="edu-item-right">
+                            <div class="edu-item-faculty">Faculty of Information Technology</div>
+                            <div class="edu-item-degree">Bachelor degree</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-exp">
+                <h2 class="section-heading"><i class="bi bi-briefcase-fill"></i>Experience</h2>
+                <p>
+                    Most of my experience comes from the university,
+                    but I have created several applications that could be used in production.
+                </p>
+                <div class="exp-item">
+                    <h3>Web application for consultation management</h3>
+                    <h3 class="no-margin">at BUT FIT</h3>
+                    <p>
+                        Single-page application that allows teachers to create and manage consultations for an individual or a group of students.
+                        Students can register to a listed consultations in a timetable view.
+                    </p>
+                    <h4>Used Technologies</h4>
+                    <p class="exp-item-tech">Javascript, Bootstrap, Firebase, HTML, CSS</p>
+                </div>
+                <div class="exp-item">
+                    <h3>Cross-platform calculator application</h3>
+                    <p>
+                        A simple GUI calculator for a variety of users.
+                        This project was focused on team work and I gained a lot of experience in communication and collaboration with other developers.
+                    </p>
+                    <h4>Used Technologies</h4>
+                    <p class="exp-item-tech">Python 3, Tkinter, Doxygen</p>
+                </div>
+            </section>
+        </div>
+        <div class="section-flex">
+            <section class="section-details">
+                <h2 class="section-heading"><i class="bi bi-envelope-fill"></i>Details</h2>
+                <div class="details-item">
+                    <h3 class="details-item-heading">Name</h3>
+                    <div>Lukáš Podvojský</div>
+                </div>
+                <div>
+                    <h3 class="details-item-heading">Email</h3>
+                    <a href="mailto:lucas.podvojsky@gmail.com" >lucas.podvojsky@gmail.com</a>
+                </div>
+                <div>
+                    <h3 class="details-item-heading">Phone</h3>
+                    <a href="tel:+420605754807">+420 605 754 807</a>
+                </div>
+                <div>
+                    <h3 class="details-item-heading">Github</h3>
+                    <a href="https://www.github.com/podvojsky" target="_blank">www.github.com/podvojsky</a>
+                </div>
+            </section>
+            <section class="section-skills">
+                <h2 class="section-heading"><i class="bi bi-code-slash"></i>Skills</h2>
+                <div>
+                    <h3>C/C++</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point"></div>
+                    </div>
+                    <h3>HTML</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point"></div>
+                    </div>
+                    <h3>CSS</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point"></div>
+                    </div>
+                    <h3>Javascript</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point"></div>
+                        <div class="skill-level-point"></div>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point"></div>
+                        <div class="skill-level-point"></div>
+                    </div>
+                    <h3>C#</h3>
+                    <div class="skill-level">
+                        <div class="skill-level-point filled"></div>
+                        <div class="skill-level-point"></div>
+                        <div class="skill-level-point"></div>
+                        <div class="skill-level-point"></div>
+                        <div class="skill-level-point"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 </body>
 </html>

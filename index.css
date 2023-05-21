@@ -5,8 +5,10 @@
     --main-font: Helvetica, Arial, sans-serif;
 
     /* Colors */
-    --primary: "";
-    --secondary: "";
+    --primary: #bcbcbc;
+    --primary-darker: #575757;
+    --secondary: #28aeb3;
+    --secondary-darker: #158183;
 }
 
 * {
@@ -16,17 +18,136 @@
 }
 
 body {
-    height: 29.7cm;
-    width: 21cm;
-    margin-left: auto;
-    margin-right: auto;
+    height: 27.7cm;
+    width: 19cm;
     margin-top: 1.5cm;
     margin-bottom: 1.5cm;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+.section-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3em;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--primary);
+}
+
+h3 {
+    font-size: 1.35em;
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: 1.25em;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1.15em;
+    margin-top: 5px;
+}
+
+a {
+    color: var(--secondary-darker);
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.section-heading {
+    font-size: 2em;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--primary);
+    display: flex;
+    gap: 5px;
+}
+
+.section-details, .section-skills {
+    width: 200px;
+}
+
+.skill-level {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    height: 10px;
+    margin-top: 3px;
+}
+
+.skill-level-point {
+    height: 10px;
+    width: 100%;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+}
+
+.filled {
+    background-color: var(--secondary);
+}
+
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edu-item-name, .edu-item-faculty {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.edu-item-timespan, .edu-item-degree {
+    font-size: 1.15em;
+    color: var(--secondary-darker);
+}
+
+
+.details-item-heading {
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.section-details .details-item:nth-child(2) .details-item-heading{
+    margin-top: 0px;
+}
+
+
+
+.exp-item {
+    margin-bottom: 15px;
+}
+
+.exp-item h4 {
+    margin-top: 5px;
+}
+
+.exp-item-tech {
+    color: var(--secondary-darker);
+}
+
+p.exp-item-tech {
+    margin-top: 2px;
 }
 
 @media print {
     body {
-        margin-top: 0cm;
-        margin-bottom: 0cm;
+        margin: 0px;
     }
 }

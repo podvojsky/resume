@@ -19,11 +19,12 @@
 
 body {
     height: 27.7cm;
-    width: 19cm;
+    width: 20cm;
     margin-top: 1.5cm;
     margin-bottom: 1.5cm;
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem;
 }
 
 main {
@@ -39,6 +40,17 @@ section {
 .section-flex {
     display: flex;
     flex-direction: column;
+}
+
+.section-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#print-button {
+    height: 32px;
+    font-size: 1rem;
 }
 
 h1 {
@@ -149,5 +161,10 @@ p.exp-item-tech {
 @media print {
     body {
         margin: 0px;
+        padding: 0px;
+    }
+
+    #print-button {
+        display: none;
     }
 }
